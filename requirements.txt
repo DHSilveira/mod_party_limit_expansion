@@ -1,0 +1,13 @@
+# Party Limit Begone Installer - Requirements
+# Python 3.7+
+
+# Bibliotecas padrão do Python utilizadas:
+# - os
+# - sys
+# - shutil
+# - subprocess
+# - winreg (apenas Windows)
+# - pathlib
+
+# Nenhuma dependência externa necessária!
+# Todas as bibliotecas usadas fazem parte da instalação padrão do Python.
