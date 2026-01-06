@@ -71,5 +71,5 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ## Links
 
-- [Unreleased]: https://github.com/SEU_USUARIO/party-limit-begone-installer/compare/v1.0.0...HEAD
-- [1.0.0]: https://github.com/SEU_USUARIO/party-limit-begone-installer/releases/tag/v1.0.0
+- [Unreleased]: https://github.com/DHSilveira/mod_party_limit_expansion/compare/v1.0.0...HEAD
+- [1.0.0]: https://github.com/DHSilveira/mod_party_limit_expansion/releases/tag/v1.0.0

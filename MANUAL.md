@@ -19,8 +19,7 @@ Guia detalhado para instalação e uso do mod Party Limit Begone.
 
 ### Software Necessário
 - ✅ Baldur's Gate 3 (Steam ou GOG)
-- ✅ Python 3.7 ou superior ([Download](https://www.python.org/downloads/))
-  - Durante instalação, marque "Add Python to PATH"
+- ⚡ Python **não é necessário** - o instalador funciona sem ele!
 
 ### Espaço em Disco
 - Aproximadamente 50 MB livres para os arquivos do mod
@@ -35,8 +34,8 @@ Guia detalhado para instalação e uso do mod Party Limit Begone.
 
 **Opção A: Git**
 ```bash
-git clone https://github.com/SEU_USUARIO/party-limit-begone-installer.git
-cd party-limit-begone-installer
+git clone https://github.com/DHSilveira/mod_party_limit_expansion.git
+cd mod_party_limit_expansion
 ```
 
 **Opção B: Download Direto**
@@ -68,7 +67,7 @@ Acesse: [Party Limit Begone no Nexus Mods](https://www.nexusmods.com/baldursgate
 Coloque todos os arquivos na mesma pasta do instalador:
 
 ```
-party-limit-begone-installer/
+mod_party_limit_expansion/
 │
 ├── instalar.bat                          ← Execute este!
 ├── party_limit_begone_installer.py

@@ -4,23 +4,42 @@ title Party Limit Begone - Instalador
 
 echo.
 echo ============================================================
-echo   Party Limit Begone - Instalador Automático
+echo   Party Limit Begone - Instalador Automatico
 echo   Para Baldur's Gate 3
 echo ============================================================
 echo.
 
-REM Verifica se Python está instalado
+REM Verifica se o executável existe (preferido)
+if exist "InstalarMod.exe" (
+    echo [OK] Executavel encontrado!
+    echo.
+    echo Iniciando instalador...
+    echo.
+    InstalarMod.exe
+    goto :end
+)
+
+if exist "dist\InstalarMod.exe" (
+    echo [OK] Executavel encontrado!
+    echo.
+    echo Iniciando instalador...
+    echo.
+    dist\InstalarMod.exe
+    goto :end
+)
+
+REM Se não tem exe, tenta Python
+echo [INFO] Executavel nao encontrado, tentando Python...
+echo.
+
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo [ERRO] Python não encontrado!
+    echo [ERRO] Python nao encontrado e executavel nao disponivel!
     echo.
-    echo Python é necessário para executar este instalador.
+    echo Para usar este instalador, voce precisa de uma das opcoes:
     echo.
-    echo Por favor, instale Python:
-    echo 1. Acesse: https://www.python.org/downloads/
-    echo 2. Baixe a versão mais recente para Windows
-    echo 3. Durante a instalação, marque "Add Python to PATH"
-    echo 4. Execute este arquivo novamente após instalar
+    echo   1. Baixar o InstalarMod.exe do repositorio
+    echo   2. Instalar Python: https://www.python.org/downloads/
     echo.
     pause
     exit /b 1
@@ -32,12 +51,12 @@ echo.
 
 REM Verifica se os arquivos do mod estão presentes
 if not exist "PartyLimitBegone.pak" (
-    echo [AVISO] PartyLimitBegone.pak não encontrado!
+    echo [AVISO] PartyLimitBegone.pak nao encontrado!
     echo.
     echo Baixe os arquivos do mod em:
     echo https://www.nexusmods.com/baldursgate3/mods/327
     echo.
-    echo Arquivos necessários:
+    echo Arquivos necessarios:
     echo - PartyLimitBegone.pak
     echo - PartyLimitBegonePatcher.bat
     echo - Pasta PatchFiles
@@ -49,7 +68,7 @@ if not exist "PartyLimitBegone.pak" (
 )
 
 if not exist "PartyLimitBegonePatcher.bat" (
-    echo [AVISO] PartyLimitBegonePatcher.bat não encontrado!
+    echo [AVISO] PartyLimitBegonePatcher.bat nao encontrado!
     echo.
     echo Baixe o patch multiplayer em:
     echo https://www.nexusmods.com/baldursgate3/mods/327
@@ -71,10 +90,11 @@ python party_limit_begone_installer.py
 
 if %errorlevel% neq 0 (
     echo.
-    echo [ERRO] Ocorreu um erro durante a instalação.
+    echo [ERRO] Ocorreu um erro durante a instalacao.
     echo.
     pause
     exit /b 1
 )
 
+:end
 exit /b 0

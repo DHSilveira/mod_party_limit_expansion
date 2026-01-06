@@ -21,16 +21,18 @@ O **Party Limit Begone** remove o limite de 4 jogadores do Baldur's Gate 3, perm
 ### Requisitos
 
 - Windows 10/11
-- Python 3.7 ou superior
 - Baldur's Gate 3 instalado
+- **Python não é necessário!** O instalador cuida de tudo automaticamente
 
 ### Instalação Rápida
 
 1. **Baixe este repositório**
    ```bash
-   git clone https://github.com/SEU_USUARIO/party-limit-begone-installer.git
-   cd party-limit-begone-installer
+   git clone https://github.com/DHSilveira/mod_party_limit_expansion.git
+   cd mod_party_limit_expansion
    ```
+   
+   Ou clique em **"Code"** → **"Download ZIP"** e extraia
 
 2. **Baixe os arquivos do mod**
    
@@ -44,11 +46,10 @@ O **Party Limit Begone** remove o limite de 4 jogadores do Baldur's Gate 3, perm
    - Pasta `PatchFiles`
 
 3. **Execute o instalador**
-   ```bash
-   python party_limit_begone_installer.py
-   ```
    
-   Ou simplesmente clique duas vezes no arquivo `party_limit_begone_installer.py`
+   Basta **clicar duas vezes** em `instalar.bat` 🎉
+   
+   O instalador guia você por todo o processo automaticamente!
 
 4. **Siga as instruções na tela!** 🎉
 
@@ -57,7 +58,8 @@ O **Party Limit Begone** remove o limite de 4 jogadores do Baldur's Gate 3, perm
 Sua pasta deve ficar assim antes de executar:
 
 ```
-party-limit-begone-installer/
+mod_party_limit_expansion/
+├── instalar.bat               ← Execute este!
 ├── party_limit_begone_installer.py
 ├── PartyLimitBegone.pak
 ├── PartyLimitBegonePatcher.bat

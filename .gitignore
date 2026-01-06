@@ -6,7 +6,7 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+# dist/ - queremos incluir o .exe no repo
 downloads/
 eggs/
 .eggs/
@@ -22,8 +22,14 @@ wheels/
 
 # Virtual Environment
 venv/
+.venv/
 ENV/
 env/
+
+# PyInstaller
+*.spec
+build/
+# dist/ - NÃO ignorar, queremos o .exe no repo
 
 # IDE
 .vscode/
@@ -49,3 +55,6 @@ PatchFiles/
 # Backup files
 *.backup
 *.bak
+
+# Instaladores Python
+python-*.exe

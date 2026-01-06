@@ -8,7 +8,7 @@ Obrigado por considerar contribuir para este projeto! 🎉
 
 Se você encontrou um bug:
 
-1. **Verifique** se o bug já foi reportado nas [Issues](https://github.com/SEU_USUARIO/party-limit-begone-installer/issues)
+1. **Verifique** se o bug já foi reportado nas [Issues](https://github.com/DHSilveira/mod_party_limit_expansion/issues)
 2. Se não foi, **crie uma nova issue** incluindo:
    - Descrição clara do problema
    - Passos para reproduzir
