@@ -32,7 +32,7 @@ O **Party Limit Begone** remove o limite de 4 jogadores do Baldur's Gate 3, perm
    cd mod_party_limit_expansion
    ```
    
-   Ou clique em **"Code"** → **"Download ZIP"** e extraia
+   Ou clique em [Download ZIP](https://github.com/DHSilveira/mod_party_limit_expansion/archive/refs/heads/main.zip) e extraia.
 
 2. **Baixe os arquivos do mod**
    
